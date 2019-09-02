@@ -80,22 +80,17 @@ Vary: Accept
 
 Assignment Statement For CURL command :  (1)
 
-curl -i https://bank-dir.herokuapp.com/api/branches/autocomplete?q=RTGS&limit=3&offset=0
+curl -i https://bank-directory.herokuapp.com/api/branches/autocomplete?q=RTGS&limit=3&offset=0
 
 RESULT :
 
-HTTP 200 OK
-Allow: GET, POST, HEAD, OPTIONS
-Content-Type: application/json
-Vary: Accept
-
 {
-    "count": 202,
-    "next": "https://bank-dir.herokuapp.com/api/branches/autocomplete/?limit=3&offset=0&page=2&q=RTGS",
+    "count": 67,
+    "next": "https://bank-directory.herokuapp.com/api/branches/autocomplete/?limit=3&offset=0&page=2&q=RTGS",
     "previous": null,
     "results": [
         {
-            "url": "https://bank-dir.herokuapp.com/api/branches/3/",
+            "url": "https://bank-directory.herokuapp.com/api/branches/1/",
             "ifsc": "ABHY0065001",
             "bank_id": 60,
             "branch": "RTGS-HO",
@@ -105,7 +100,7 @@ Vary: Accept
             "state": "MAHARASHTRA"
         },
         {
-            "url": "https://bank-dir.herokuapp.com/api/branches/118/",
+            "url": "https://bank-directory.herokuapp.com/api/branches/116/",
             "ifsc": "ABNA0000001",
             "bank_id": 110,
             "branch": "RTGS-HO",
@@ -115,7 +110,7 @@ Vary: Accept
             "state": "MAHARASHTRA"
         },
         {
-            "url": "https://bank-dir.herokuapp.com/api/branches/144/",
+            "url": "https://bank-directory.herokuapp.com/api/branches/142/",
             "ifsc": "ADCB0000001",
             "bank_id": 143,
             "branch": "RTGS-HO",
@@ -125,7 +120,7 @@ Vary: Accept
             "state": "MAHARASHTRA"
         },
         {
-            "url": "https://bank-dir.herokuapp.com/api/branches/145/",
+            "url": "https://bank-directory.herokuapp.com/api/branches/143/",
             "ifsc": "ADCC0000001",
             "bank_id": 61,
             "branch": "RTGS-HO",
@@ -136,14 +131,11 @@ Vary: Accept
         }
     ]
 }
-
-
-}
 --------------------------------------------------------------------------------------
 
 Assignment Statement For CURL command :  (2)
 
-curl -i http://bank-dir.herokuapp.com/api/branches/?q=Bangalore&limit=4&offset=0
+curl -i http://bank-directory.herokuapp.com/api/branches/?q=Bangalore&limit=4&offset=0
 
 
 RESULT :
@@ -154,12 +146,12 @@ Content-Type: application/json
 Vary: Accept
 
 {
-    "count": 66,
-    "next": "http://bank-dir.herokuapp.com/api/branches/?limit=4&offset=0&page=2&q=Bangalore",
+    "count": 23,
+    "next": "http://bank-directory.herokuapp.com/api/branches/?limit=4&offset=0&page=2&q=Bangalore",
     "previous": null,
     "results": [
         {
-            "url": "http://bank-dir.herokuapp.com/api/branches/95/",
+            "url": "http://bank-directory.herokuapp.com/api/branches/93/",
             "ifsc": "ADCB0000002",
             "bank_id": 143,
             "branch": "BANGALORE",
@@ -169,7 +161,7 @@ Vary: Accept
             "state": "KARNATAKA"
         },
         {
-            "url": "http://bank-dir.herokuapp.com/api/branches/126/",
+            "url": "http://bank-directory.herokuapp.com/api/branches/124/",
             "ifsc": "ABNA0100318",
             "bank_id": 110,
             "branch": "BANGALORE",
@@ -179,7 +171,7 @@ Vary: Accept
             "state": "KARNATAKA"
         },
         {
-            "url": "http://bank-dir.herokuapp.com/api/branches/6156/",
+            "url": "http://bank-directory.herokuapp.com/api/branches/6154/",
             "ifsc": "ANDB0002073",
             "bank_id": 15,
             "branch": "BANGALORE",
@@ -189,7 +181,7 @@ Vary: Accept
             "state": "KARNATAKA"
         },
         {
-            "url": "http://bank-dir.herokuapp.com/api/branches/6441/",
+            "url": "http://bank-directory.herokuapp.com/api/branches/6439/",
             "ifsc": "ANDB0002363",
             "bank_id": 15,
             "branch": "BANGALORE",
@@ -199,7 +191,5 @@ Vary: Accept
             "state": "KARNATAKA"
         }
     ]
-}
-
 }
 ------------------------------------------------------------------------------------------

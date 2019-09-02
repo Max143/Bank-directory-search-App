@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'Bank',
     'rest_framework',
     'django_filters',
+    'import_export',
 ]
 
 MIDDLEWARE = [
@@ -77,28 +78,20 @@ WSGI_APPLICATION = 'SRC.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# Data using Postgresql hosted on Clever-cloud 
+
+#Database using Postgresql hosted on Heroku for testing purpose 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bcfdjybghqxj8izvykql',
-        'USER': 'u80egqq3wxhcjatntshf',
-        'PASSWORD': 'u80egqq3wxhcjatntshf',
-        'HOST': 'bcfdjybghqxj8izvykql-postgresql.services.clever-cloud.com',
+        'NAME': 'bx3yjvolaogctsuoox9n',
+        'USER': 'uqhxlypcswjebrbpkdxj',
+        'PASSWORD': '6CFVpxBx6Qa5ftlExnx4',
+        'HOST': 'bx3yjvolaogctsuoox9n-postgresql.services.clever-cloud.com',
         'PORT': '5432',
     }
 }
-# Database using Postgresql hosted on Heroku for testing purpose 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'Bank',
-#         'USER': 'postgres',
-#         'PASSWORD': 'silverstone143',
-#         'HOST': '127.0.0.1',
-#         'PORT': '5432',
-#     }
-# }
+
+
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
@@ -151,3 +144,15 @@ REST_FRAMEWORK = {
 }
 
 django_heroku.settings(locals())
+
+
+
+POSTGRESQL_ADDON_HOST='bx3yjvolaogctsuoox9n-postgresql.services.clever-cloud.com'
+POSTGRESQL_ADDON_DB='bx3yjvolaogctsuoox9n'
+POSTGRESQL_ADDON_USER='uqhxlypcswjebrbpkdxj'
+POSTGRESQL_ADDON_PORT=5432
+POSTGRESQL_ADDON_PASSWORD='6CFVpxBx6Qa5ftlExnx4'
+# POSTGRESQL_ADDON_URI='postgresql://uqhxlypcswjebrbpkdxj:6CFVpxBx6Qa5ftlExnx4@bx3yjvolaogctsuoox9n-postgresql.services.clever-cloud.com:5432/bx3yjvolaogctsuoox9n'
+
+
+IMPORT_EXPORT_USE_TRANSACTIONS = True

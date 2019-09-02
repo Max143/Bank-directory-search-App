@@ -14,6 +14,9 @@ Project Submission Date: 31the of Aug 2019
 
 I have a job at NOOS Technology, which I will be leaving this job soon, to go for Internship. 
 I literally litlle had little time to work on assignment every day, in night only. So, took 4 days.
+I have completely this on sunday. 
+
+Let me know if yow want to make any changes in the assignement.
 
 
 -----------------------------------------------------------------------------------------------
@@ -21,3 +24,17 @@ I literally litlle had little time to work on assignment every day, in night onl
 
 Open CURL_CMD.MD file to call the APIs
 -------------------------------------------------------------------------------------------------
+
+
+NOTE : ** important
+
+As instructed in the assignement. To use the clever cloud platform to host the data. 
+I have hosted the PostgreSQL database at clever cloud platform.
+
+Data was in huge amount. While adding data from to database, causes Not responding to my system and crashes.
+And processes was slow. Taking much time to add data to the database server. 
+So, I deciced not to host complete data. It has approx. 1400 rows added. Actuall rows was in lacs. 
+
+My system problem of getting slow and not responding, won't let me or take much time.
+
+-----------------------------------------------------------------------------------------------------
