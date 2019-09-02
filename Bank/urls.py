@@ -9,6 +9,7 @@ router.register('branches', views.BankBranchView)
 
 urlpatterns = [
     path('api/', include(router.urls)),
+
     
 ]
 
